@@ -1,0 +1,36 @@
+PRIMEIRA PARTE DO JAVASCRIPT CRIANDO UM OBJETO PARA GERENCIAR O JOGO
+
+Math.random() gera um número decimal entre 0 e 1. 
+Multiplicamos por 100 e usamos Math.floor() 
+para obter um número inteiro.
+
+tentativas começa com 10 porque queremos 
+dar ao jogador um limite de tentativas.
+
+historico é um array que vamos usar para 
+guardar os palpites do usuário.
+
+
+SEGUNDA PARTE CAPTURAR O PALPITE DO USUARIO
+
+Pegamos o valor do <input> e convertemos para número com parseInt().
+
+Se o usuário digitar algo inválido (ex: texto ou número fora de 1-100),
+ mostramos uma mensagem de erro e encerramos a função com return.
+
+Se o número for válido, adicionamos ao histórico e 
+diminuímos as tentativas.
+
+Chamamos a função verificarPalpite() 
+para checar se o palpite está correto.
+
+
+TERCEIRA PARTE VERIFICAR O PALPITE DO USUARIO
+
+Se o jogador acertar, exibimos uma mensagem de parabéns
+ e desativamos o botão.
+
+Se o número for menor ou maior, damos dicas.
+
+Se as tentativas acabarem, mostramos o número 
+correto e encerramos o jogo.
